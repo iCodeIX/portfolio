@@ -1,100 +1,166 @@
-<!DOCTYPE hmtl>
-<html>
+<!DOCTYPE html>
+<html lang=en-US>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale:1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<title>Win Portfolio</title>	
 </head>
 <body>
 	<div class="main-container">
 		<header>
-			<ul>
-				<li><a href="#aboutme">About me</a></li>
-				<li><a href="#aboutme">Skills</a></li>
-				<li><a href="#aboutme">Projects</a></li>
-				<li><a href="#aboutme">Contacts</a></li>
-			</ul>
+			<span class="logo">W I N</span>
+			<nav class="nav">
+				<ul class="nav-list">
+					<div class="close-nav-icon"><i class="fa fa-times"></i></div>
+					<li><a href="#aboutme">About me</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contacts">Contacts</a></li>
+				</ul>
+			</nav>
+			<div class="hamburger-icon"><i class="fa fa-bars"></i></div>
 		</header>
 		
-		<section class="about-me">
-			<h3>About me</h3>
-				<div class="my-pic">
-					<img src="images/mypic.png" alt="sherwin's photo">
-				</div>
+		<section class="about-me" id="aboutme">
+
 				<div class="intro">
-					<p>Hello Visitors, Welcome to My Portfolio Website. 
-					I am <span class="nickname">WIN</span>, your future developer. To see an imagination into reality excites me to build
-					functional applications. I am very eager to learn new skills and technology for the dream 
-					i have been wanting for.
+					<p>Hello, Visitor!<br>
+						I am <span class="nickname">WIN</span>.<br> I have heart set on building functional software to win people to appreciate the innovation this modern world offering to us. 
+					</p>
 					<p class="quote"> 
-					In school , there is test after lesson, but in life you will learn a lesson after the test.
-					Test me , and let me be guided by the lessons that i would learn.
+						  <i>"When you're surrounded by people who share a passionate commitment around a common purpose, anything is possible."</br>
+				   --Howard Schultz</i>
 					</p>
-					</p>
+					
+					
 				</div>
+				<div class="resume clearfix">
+					<a class="cvlink" href="file/sherwin_carlos_.pdf" download>Download CV</a>
+				</div>
+				
+				
 		</section>
 		
-		<section class="skills">
-			<h3>Skills</h3>
+		<section class="skills" id="skills">
+			<h4>Skills</h4>
 				<p class="skills-intro">
 					I have the basic knowledge and ideas using the following programming languages/technology.
 				</p>
-				<ul>
-					<li><img src=""><p class="tech-name">JAVASCRIPT</p></li>
-					<li><img src=""><p class="tech-name">PHP</p></li>
-					<li><img src=""><p class="tech-name">JAVA</p></li>
-					<li><img src=""><p class="tech-name">MYSQL</p></li>
-					<li><img src=""><p class="tech-name">HTML</p></li>
-					<li><img src=""><p class="tech-name">CSS</p></li>
-					<li><img src=""><p class="tech-name">GITHUB</p></li>
+				<ul class="skills-list">
+					<li class="skill-item"><img class="skills-icon" src="images/icons/javascript.png"><p class="tech-name">JAVASCRIPT</p></li>
+					<li class="skill-item"><img class="skills-icon" src="images/icons/php.png"><p class="tech-name">PHP</p></li>
+					<li class="skill-item"><img class="skills-icon" src="images/icons/java.png"><p class="tech-name">JAVA</p></li>
+					<li class="skill-item"><img class="skills-icon" src="images/icons/mysql.png"><p class="tech-name">MYSQL</p></li>
+					<li class="skill-item"><img class="skills-icon" src="images/icons/html-5.png"><p class="tech-name">HTML</p></li>
+					<li class="skill-item"><img class="skills-icon" src="images/icons/css.png"><p class="tech-name">CSS</p></li>
+					<li class="skill-item"><img class="skills-icon" src="images/icons/github.png"><p class="tech-name">GITHUB</p></li>
 				</ul>
 		</section>
 		
-		<section class="projects">
-			<h3>Projects</h3>
-				<ul>
-					<li>
-						<div class="images-containter">
-						</div>
+		<section class="projects" id="projects">
+			<h4>Projects</h4>
+				<ul class="projects-list">
+					<li class="project-item">
+						<ul class="project-images-list">
+							<li class="project-image-item">
+								<img class="project-image" src="images/projects/project1/project-1-image-1.jpg">
+								<div class="arrow">
+									<i class="fa-solid fa-angle-left fa-2xl arrow-left"></i>
+								</div>
+								<div class="arrow">
+									<i class="fa-solid fa-angle-right fa-2xl arrow-right"></i>
+								</div>
+									
+							</li>
+						</ul>
 						<p class="project-title">
-						VIRTUAL DEN: CICT ONLINE COMMUNITY APPLICATION FOR THE COLLEGE OF INFORMATION AND COMMUNICATIONS TECHNOLOGY
+							fsafs
 						</p>
-						<p class="my-role">
-						my role is.
+						<div class="project-about-btn collapsible">
+							More about
+						</div>
+						
+						<p class="project-more-about">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+								publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							
 						</p>
 					</li>
-					<li>
-						<div class="images-containter">
-						</div>
+					
+					<li class="project-item">
+						<ul class="project-images-list">
+							<li class="project-image-item">
+								<img class="project-image" src="images/projects/project1/project-1-image-1.jpg">
+								<div class="arrow">
+									<i class="fa-solid fa-angle-left fa-2xl arrow-left"></i>
+								</div>
+								<div class="arrow">
+									<i class="fa-solid fa-angle-right fa-2xl arrow-right"></i>
+								</div>
+									
+							</li>
+						</ul>
 						<p class="project-title">
-						SLAMBOOK APP
+							VIRTUAL DEN1
 						</p>
-						<p class="my-role">
-						my role is.
+						<div class="project-about-btn collapsible">
+							More about
+						</div>
+						
+						<p class="project-more-about">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+								publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							
 						</p>
 					</li>
-					<li>
-						<div class="images-containter">
-						</div>
+					
+					<li class="project-item">
+						<ul class="project-images-list">
+							<li class="project-image-item">
+								<img class="project-image" src="images/projects/project1/project-1-image-1.jpg">
+								<div class="arrow">
+									<i class="fa-solid fa-angle-left fa-2xl arrow-left"></i>
+								</div>
+								<div class="arrow">
+									<i class="fa-solid fa-angle-right fa-2xl arrow-right"></i>
+								</div>
+									
+							</li>
+						</ul>
 						<p class="project-title">
-						SIMPLE GRADING SYSTEM
+							VIRTUAL DEN1
 						</p>
-						<p class="my-role">
-							my role is.
+						<div class="project-about-btn collapsible">
+							More about
+						</div>
+						
+						<p class="project-more-about">
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+								publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							
 						</p>
 					</li>
+					
+					
+					
 				</ul>
 				
 		</section>
-		<section class="contacts">
-			<h3>Contacts</h3>
-			<ul>
-				<li>0928-385-1610</li>
-				<li> sherwincarlosph@gmail.com</li>
-				<li> https://www.linkedin.com/in/sherwin-carlos-179363180</li>
+		<section class="contacts" id="contacts">
+			<h4>Contacts</h4>
+			<ul class="contacts-list">
+				<li><i class="fa fa-phone icon"></i>0928-385-1610</li>
+				<li><i class="fa fa-at icon"></i>sherwincarlosph@gmail.com</li>
+				<li><i class="fa fa-linkedin icon"></i><a href="https://www.linkedin.com/in/sherwin-carlos-179363180">www.linkedin.com/in/sherwin-carlos-179363180</a></li>
 			</ul>
 		</section>
 		
 	</div>
+<script src="js/scripts.js"></script>
 </body>
 </html>

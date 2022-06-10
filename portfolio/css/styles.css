@@ -1,0 +1,300 @@
+
+/* set the general settings in my css */
+
+
+:root{
+	--blue:#0088FF;
+	--white:#FEFFFF;
+	--font-family:'Montserrat', sans-serif;
+}
+
+
+*, body, html{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:var(--font-family);
+	
+}
+
+li{
+	list-style-type:none;
+}
+
+a{
+	text-decoration:none;
+	letter-spacing:2px;
+}
+
+section{
+	padding:15px;
+}
+
+section h4{
+	letter-spacing:5px;
+}
+
+i{
+	margin-left:5px;
+}
+
+/* TABLE OF CONTENT 
+
+      HEADER - 35
+
+*/
+
+/* HEADER */
+
+header{
+	min-width:100%;
+	display:flex;
+	justify-content:space-between;
+	padding:15px;
+	background:var(--blue)
+}
+
+.logo{
+	letter-spacing:2px;
+	color:var(--white);
+}
+
+nav{
+	display:none;
+	position:absolute;
+	min-width:300px;
+	min-height:100vh;
+	top:0;
+	right:0;
+	background:var(--blue);
+	text-align:center;
+	padding:15px;
+	
+}
+
+.hamburger-icon{
+	color:var(--white);
+}
+
+
+/* toggle navigation list */
+
+.show-list{
+	display:block;
+}
+
+.show-list ul{
+	display:flex;
+	flex-direction:column;
+	gap:15px;
+}
+.show-list li a {
+	color:var(--white);
+} 
+
+.close-nav-icon{
+	color:var(--white);
+	text-align:right;
+}
+
+
+/* SECTION [ABOUT ME] */
+
+.intro{
+	padding:20px;
+}
+
+.intro p{
+	text-align:center;
+	margin-top:10px;
+	hyphens: auto;
+	letter-spacing:2px;
+	font-weight:600;
+	
+}
+
+.quote{
+	font-size:10px;
+}
+
+
+.resume{
+	margin:10px;
+}
+
+.cvlink{
+    background: var(--blue);
+	width:180px;
+	float:right;
+	text-align:center;
+	font-size:12px;
+	font-weight:bold;
+	color:var(--white);
+	padding:5px;
+}
+
+.clearfix:after{
+	content:"";
+	clear:both;
+	display:table;
+}
+
+/* SECTION [SKILLS] */
+
+.skills{
+	
+}
+
+
+
+.skills-intro{
+	text-align:justify;
+	text-indent:50px;
+	margin-top:10px;
+	hyphens: auto;
+	letter-spacing:2px;
+}
+
+.skills-list{
+	display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.skills-list .skill-item{
+	text-align:center;
+	padding:10px;
+}
+
+.skills-icon{
+	max-width:50px;
+	
+}
+
+/* SECTION [PROJECTS] */
+
+.projects-list{
+	display: grid;
+    grid-template-columns: auto;
+   	margin:10px;
+}
+
+.projects-list .project-item{
+	text-align:center;
+	padding:10px;
+	max-width:80%;
+	margin:0 auto;
+}
+
+.project-images-list{
+	max-width:100%;
+	margin:0 auto;
+	background:#6C6C6C;
+}
+
+.project-image-item{
+	position:relative;
+}
+
+.project-image{
+	max-width:100%;
+	border-radius:5px;
+}
+
+
+.arrow i{
+	cursor:pointer;
+	color:#6C6C6C;
+}
+
+.arrow-left{
+	position:absolute;
+	top:50%;
+	left:5%;
+}
+
+.arrow-right{
+	position:absolute;
+	top:50%;
+	right:5%;
+}
+
+.project-title{
+	color:var(--white);
+	font-weight:600;
+	width:100%;
+	padding:10px;
+	background:#6C6C6C;
+	font-style:italic;
+	border-radius: 0 0 10px 10px;
+}
+
+.project-about-btn{
+	cursor:pointer;
+	color:var(--blue);
+	font-weight:600;
+	padding:10px;
+	width:150px;
+	margin-left:auto;
+	
+}
+
+.collapsible:after{
+	content: '\002B';
+  	color: var(--blue);
+  	font-weight: bold;
+  	float: right;
+     margin-left: 2px;
+}
+
+
+/* toggle more about */
+
+.active:after {
+  content: "\2212";
+}
+
+.project-more-about {
+  text-align:justify;
+  text-indent:50px;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: scroll;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  
+}
+
+
+
+
+
+
+/* SECTION [CONTACTS]*/
+
+.contacts-list li{
+	
+	margin-top:10px;
+	text-align:justify;
+	hyphens: auto;
+	
+}
+
+.icon{
+	margin:0 10px 0 10px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+  
+    	.projects-list{
+    	display:grid;
+    	grid-template-columns:auto auto auto;
+    	}
+  
+}
