@@ -1,3 +1,8 @@
+:root {
+    --white-color: #d1d1d1;
+    --black-color: #1d1d20;
+}
+
 *,
 html {
     padding: 0;
@@ -6,8 +11,8 @@ html {
 }
 
 body {
-    color: #d1d1d1;
-    background: #1d1d20;
+    color: var(--white-color);
+    background: var(--black-color);
     font-family: "eurostile", sans-serif;
 
 }
@@ -23,7 +28,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 10;
-    background: #1d1d20;
+    background: var(--black-color);
 }
 
 
@@ -31,11 +36,11 @@ header {
     letter-spacing: 2px;
     text-transform: uppercase;
     animation: rotateElement 5s infinite;
-    color: #d1d1d1;
-    background: #1d1d20;
+    color: var(--white-color);
+    background: var(--black-color);
     display: block;
     padding: 5px 10px;
-    border: 1px solid #d1d1d1;
+    border: 1px solid var(--white-color);
 }
 
 @keyframes rotateElement {
@@ -58,7 +63,7 @@ header {
     right: 0;
     top: 54px;
     width: 50%;
-    background: #1d1d20;
+    background: var(--black-color);
 }
 
 
@@ -68,7 +73,7 @@ header {
 
 nav a {
     display: inline-block;
-    color: #d1d1d1;
+    color: var(--white-color);
     text-decoration: none;
     padding: 16px;
     font-size: 16px;
@@ -97,7 +102,7 @@ nav a {
 
 .resume-link a {
     font-size: 14px;
-    color: #d1d1d1;
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -195,7 +200,7 @@ h2 {
 /* projects section */
 
 .projects-section {
-    background: #1d1d20;
+    background: var(--black-color);
     padding: 32px;
 }
 
@@ -208,7 +213,7 @@ h2 {
 h2 hr {
     width: 70px;
     height: 5px;
-    background: #d1d1d1;
+    background: var(--white-color);
     margin: 5px 0 0 0;
 }
 
@@ -234,7 +239,7 @@ ul {
 
 .project-image {
     border-radius: 16px 16px 0 0;
-    background: #d1d1d1;
+    background: var(--white-color)
 
 }
 
@@ -245,17 +250,17 @@ ul {
 }
 
 .project-desc {
-    background: #1d1d20;
+    background: var(--black-color);
     padding: 8px;
     text-align: center;
     border-radius: 0 0 16px 16px;
     position: relative;
-    border: 1px solid #d1d1d1;
+    border: 1px solid var(--white-color);
 }
 
 .project-title {
     font-size: 16px;
-    color: #d1d1d1;
+    color: var(--white-color);
     font-weight: 600;
     letter-spacing: 2.5px;
     margin: 4px;
@@ -263,7 +268,7 @@ ul {
 
 .project-text {
     font-size: 14px;
-    color: #d1d1d1;
+    color: var(--white-color);
     opacity: 0.5;
 }
 
@@ -274,7 +279,7 @@ ul {
 .project-buttons button {
     cursor: pointer;
     outline: none;
-    border: 2px solid #d1d1d1;
+    border: 2px solid var(--white-color);
     border-radius: 16px;
     padding: 4px 8px;
     width: 100px;
@@ -286,7 +291,7 @@ ul {
 }
 
 .github-link a {
-    color: #1d1d20;
+    color: var(--black-color);
     text-decoration: none;
 }
 
@@ -295,7 +300,7 @@ ul {
 }
 
 .visit-link a {
-    color: #d1d1d1;
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -332,7 +337,7 @@ ul {
     width: 100%;
     min-height: 100vh;
     position: fixed;
-    background: #1d1d20;
+    background: var(--black-color);
     animation: removeRing 0s ease-in 3s forwards;
 }
 
@@ -355,14 +360,14 @@ ul {
     transform: translate(-50%, -50%);
     width: 150px;
     height: 150px;
-    background: #1d1d20;
+    background: var(--black-color);
     border: 3px solid #3c3c3c;
     border-radius: 50%;
     text-align: center;
     line-height: 150px;
     font-family: sans-serif;
     font-size: 20px;
-    color: #d1d1d1;
+    color: var(--white-color);
     letter-spacing: 4px;
     text-transform: uppercase;
     text-shadow: 0 0 10px #d1d1d1;
