@@ -95,8 +95,10 @@ nav a {
     width: 24px;
 }
 
-.resume-link span {
+.resume-link a {
     font-size: 14px;
+    color: #d1d1d1;
+    text-decoration: none;
 }
 
 /* hero page */
